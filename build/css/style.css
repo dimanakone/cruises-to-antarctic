@@ -1313,10 +1313,9 @@ button,
   margin-left: 95px;
 }
 
-.header__title {
+.header__text-wrap h1 {
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -1324,14 +1323,54 @@ button,
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header__text {
+.header__text-wrap p {
   margin-top: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #f9fbfd;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.about__content-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 560px;
+  grid-template-columns: 1fr 560px;
+  gap: 88px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about__desc-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.about p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .navigation {
@@ -1385,7 +1424,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1524,15 +1562,34 @@ button,
     margin-left: 0;
   }
 
-  .header__title {
+  .header__text-wrap h1 {
     margin-bottom: 29px;
     font-size: 50px;
     line-height: 61px;
   }
 
-  .header__text {
+  .header__text-wrap p {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .about {
+    padding: 100px 0;
+  }
+
+  .about__content-wrap {
+    -ms-grid-columns: 1fr 324px;
+    grid-template-columns: 1fr 324px;
+    gap: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .about h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 36px;
   }
 
   .navigation__logo-link img {
@@ -1599,6 +1656,23 @@ button,
     min-height: 500px;
     padding-top: 20px;
     background-image: url("../../img/background/bg-header-mobile@1x.jpg");
+  }
+
+  .about {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .about__content-wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .navigation__logo-link img {

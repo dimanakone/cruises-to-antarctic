@@ -22,7 +22,9 @@
 </head>
 
 <body>
+
   <div class="wrapper">
+
     <header class="header">
       <div class="container">
         <nav class="header__navigation navigation">
@@ -45,18 +47,31 @@
           </ul>
         </nav>
         <div class="header__text-wrap">
-          <h1 class="header__title">Круизы в Антарктику</h1>
-          <p class="header__text">Волшебный мир айсбергов и пингвинов</p>
+          <h1>Круизы в Антарктику</h1>
+          <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
       </div>
     </header>
+
     <main>
-      <section class="intro">
+      <section class="about">
         <div class="container">
-          <div>gfggggggggggggggggg</div>
+          <div class="about__content-wrap">
+            <div class="about__desc-wrap">
+              <h2>Путешествие на край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+            </div>
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/content/pingvini-mobile@1x.webp 1x, img/content/pingvini-mobile@2x.webp 2x">
+              <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/pingvini-tablet@1x.webp 1x, img/content/pingvini-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/pingvini-desktop@1x.webp 1x, img/content/pingvini-desktop@2x.webp 2x">
+              <img src="img/content/pingvini-desktop@1x.jpg" srcset="img/content/pingvini-desktop@2x.jpg 2x" alt="Пингвины">
+            </picture>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrap">
@@ -105,6 +120,7 @@
         </div>
       </div>
     </footer>
+
   </div>
 
   <!-- Модалки -->
