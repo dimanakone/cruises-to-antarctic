@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 35px;
   min-height: 650px;
   background-color: $color-dark-blue;
@@ -55,10 +56,16 @@
     font-size: 50px;
     line-height: 61px;
   }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .header p {
-  margin-top: 0;
+  margin: 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -67,6 +74,11 @@
 
   @include vp-1365 {
     font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
     line-height: 22px;
   }
 }
