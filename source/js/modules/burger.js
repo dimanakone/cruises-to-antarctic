@@ -1,30 +1,38 @@
 import '../utils/focus-lock.js';
 
-export const toggleNav = () => {
+export const toggleMobileMenu = () => {
+  const headerElement = document.querySelector('[data-header]');
   const navigationElement = document.querySelector('[data-navigation]');
   const togglerElement = document.querySelector('[data-toggler]');
   const logoElement = document.querySelector('[data-navigation-logo]');
+  const elements = [headerElement, navigationElement, togglerElement, logoElement];
 
-  const openNav = () => {
+  const openMenu = () => {
     document.documentElement.classList.add('scroll-lock');
-    navigationElement.classList.add('is-active');
-    togglerElement.classList.add('is-active');
-    logoElement.classList.add('is-active');
+    elements.forEach((element) => element.classList.add('is-active'));
   };
 
-  const closeNav = () => {
+  const closeMenu = () => {
     document.documentElement.classList.remove('scroll-lock');
-    navigationElement.classList.remove('is-active');
-    togglerElement.classList.remove('is-active');
-    logoElement.classList.remove('is-active');
+    elements.forEach((element) => element.classList.remove('is-active'));
   };
 
-  togglerElement.addEventListener('click', () => {
-    if (navigationElement.classList.contains('is-active')) {
-      closeNav();
+  document.addEventListener('click', (evt) => {
+    const isTogglerTarget = evt.target === togglerElement;
+    const isLinkTarget = evt.target.nodeName === 'A';
+
+    if (!isTogglerTarget && !isLinkTarget && evt.target.closest('[data-navigation]')) {
       return;
     }
-    openNav();
+
+    if (navigationElement.classList.contains('is-active')) {
+      closeMenu();
+      return;
+    }
+
+    if (isTogglerTarget) {
+      openMenu();
+    }
   });
 
   // navigationElement.classList.remove('no-js');

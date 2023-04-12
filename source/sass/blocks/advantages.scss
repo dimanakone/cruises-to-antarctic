@@ -1,0 +1,105 @@
+.advantages {
+  min-height: 562px;
+  padding: 120px 0;
+  background-color: $color-light-blue;
+  background-image: url("../img/background/bg-advantages-desktop@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include vp-1365 {
+    min-height: 588px;
+    padding: 100px 0;
+    background-image: url("../img/background/bg-advantages-tablet@1x.jpg");
+    border: 1px solid black;
+  }
+
+  @include vp-767 {
+    min-height: auto;
+    padding: 65px 0;
+    background-image: url("../img/background/bg-advantages-mobile@1x.jpg");
+    border: none;
+  }
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.advantages__item {
+  padding: 30px 30px 50px;
+  background-color: $color-default-white;
+
+  @include vp-1365 {
+    padding: 26px 20px 25px;
+  }
+}
+
+.advantages svg {
+  margin-bottom: 25px;
+
+  @include vp-1365 {
+    margin-bottom: 24px;
+  }
+}
+
+.advantages h2 {
+  margin-top: 0;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $color-dark-blue;
+
+  @include vp-1365 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-dark-blue;
+
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.advantages p {
+  margin-top: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark-blue;
+}
+
