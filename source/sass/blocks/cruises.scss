@@ -1,5 +1,13 @@
 .cruises {
   padding: 95px 0 120px;
+
+  @include vp-1365 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 65px 0;
+  }
 }
 
 .cruises h2 {
@@ -10,17 +18,36 @@
   font-size: 28px;
   line-height: 42px;
   color: $color-default-black;
+
+  @include vp-1365 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
 }
 
 .cruises__list {
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   list-style-type: none;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, 260px);
   gap: 30px;
   justify-content: center;
+
+  @include vp-1365 {
+    grid-template-columns: repeat(auto-fill, 309px);
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(auto-fill, 270px);
+  }
 }
 
 .cruises__item {
@@ -39,8 +66,15 @@
   padding: 30px 25px 34px 25px;
   color: $color-default-white;
   background-color: $color-default-black;
-  box-shadow: $shadow-cards;
   overflow-y: auto;
+
+  @include vp-1365 {
+    padding: 35px;
+  }
+
+  &:hover {
+    box-shadow: $shadow-cards;
+  }
 }
 
 .cruises__item img {

@@ -20,3 +20,58 @@
     border: none;
   }
 }
+
+.booking__form-wrap {
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  gap: 144px;
+
+  @include vp-1365 {
+    padding: 0;
+    flex-direction: column;
+    gap:60px;
+  }
+}
+
+.booking__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking__form {
+  max-width: 403px;
+}
+
+.booking h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+
+  @include vp-1365 {
+    max-width: 430px;;
+    margin-bottom: 25px;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+}
+
+.booking__content p {
+  width: 352px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1365 {
+    width: auto;
+    max-width: 430px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
