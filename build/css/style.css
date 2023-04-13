@@ -644,21 +644,25 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
-  color: #f9fbfd;
-  background-color: #2c39f2;
-  border: none;
+  width: 100%;
+  padding: 9px 20px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: inherit;
+  text-align: center;
+  color: #011C40;
+  background-color: #f9fbfd;
+  border: 0;
+  border-radius: 0;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
 }
 
 .btn:disabled {
@@ -1301,7 +1305,7 @@ button,
   position: relative;
   padding-top: 35px;
   min-height: 650px;
-  background-color: #011c40;
+  background-color: #011C40;
   background-image: url("../../img/background/bg-header-desktop@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1452,6 +1456,9 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navigation--footer .navigation__logo-link {
@@ -1504,7 +1511,7 @@ button,
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011c40;
+  color: #011C40;
 }
 
 .advantages h3 {
@@ -1513,18 +1520,159 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #011c40;
+  color: #011C40;
 }
 
 .advantages p {
   margin-top: 0;
   font-size: 14px;
   line-height: 20px;
-  color: #011c40;
+  color: #011C40;
+}
+
+.cruises {
+  padding: 95px 0 120px;
+}
+
+.cruises h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011C40;
+}
+
+.cruises__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cruises__item {
+  position: relative;
+  height: 386px;
+  color: #f9fbfd;
+  background-color: #011C40;
+  cursor: pointer;
+}
+
+.cruises__content {
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+  min-width: 100%;
+  padding: 30px 25px 34px 25px;
+  color: #f9fbfd;
+  background-color: #011C40;
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  overflow-y: auto;
+}
+
+.cruises__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.cruises__item h3,
+.cruises__content h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  z-index: 2;
+}
+
+.cruises__item h3 {
+  position: absolute;
+  top: 343px;
+  left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cruises__content h3 {
+  position: static;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.cruises__item h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruises__item p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f9fbfd;
+}
+
+.cruises__item p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.cruises__item:focus-within img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cruises__item:focus img,
+.cruises__item:hover img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cruises__item:focus-within h3,
+.cruises__item:focus h3,
+.cruises__item:hover h3 {
+  display: none;
+}
+
+.cruises__content:focus-within h3,
+.cruises__content:focus h3,
+.cruises__content:hover h3 {
+  display: block;
+}
+
+.booking {
+  min-height: 555px;
+  padding: 50px 0;
+  background-color: #e3ecf6;
+  background-image: url("../img/background/bg-booking-desktop@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {
-  background-color: #011c40;
+  background-color: #011C40;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1724,6 +1872,12 @@ button,
     line-height: 25px;
   }
 
+  .booking {
+    min-height: 805px;
+    padding: 100px 0;
+    background-image: url("../img/background/bg-booking-tablet@1x.jpg");
+  }
+
   .social {
     grid-template-columns: repeat(auto-fit, 16px);
     gap: 22px;
@@ -1826,7 +1980,7 @@ button,
   }
 
   .navigation__logo-link.is-active .navigation__logo {
-    fill: #011c40;
+    fill: #011C40;
   }
 
   .navigation__logo {
@@ -1857,7 +2011,7 @@ button,
   .navigation__list-wrap.is-active .navigation__link {
     font-size: 18px;
     line-height: 22px;
-    color: #011c40;
+    color: #011C40;
   }
 
   .navigation__list {
@@ -1926,6 +2080,13 @@ button,
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  .booking {
+    min-height: 760px;
+    padding: 65px 0;
+    background-image: url("../img/background/bg-booking-mobile@1x.jpg");
+    border: none;
   }
 
   .footer {

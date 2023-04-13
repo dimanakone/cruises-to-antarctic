@@ -37,7 +37,7 @@
     }
 
     &.is-active .navigation__logo{
-      fill: $color-dark-blue;
+      fill: $color-default-black;
     }
   }
 }
@@ -79,7 +79,7 @@
     &.is-active .navigation__link {
       font-size: 18px;
       line-height: 22px;
-      color: $color-dark-blue;
+      color: $color-default-black;
     }
   }
 }
@@ -155,6 +155,7 @@
 .navigation--footer {
   margin-bottom: 0;
   justify-content: flex-start;
+  align-items: center;
 
   @include vp-767 {
     margin-bottom: 0;

@@ -1,18 +1,18 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
-
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  width: 100%;
+  padding: 9px 20px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: inherit;
+  text-align: center;
+  color: $color-default-black;
+  background-color: $color-default-white;
+  border: 0;
+  border-radius: 0;
   cursor: pointer;
-
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  user-select: none;
+  transition: opacity .3s ease;
 
   &:disabled {
     opacity: 0.5;
