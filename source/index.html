@@ -2,20 +2,20 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Круизы в Антарктику - путешествие на край Земли!">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/16.png" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-regular.woff2" type="font/woff2" as="font"
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/16.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/montserrat400.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-500.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="fonts/montserrat500.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-600.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="fonts/montserrat600.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-v25-cyrillic_latin-700.woff2" type="font/woff2" as="font"
+  <link rel="preload" href="fonts/montserrat700.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -29,7 +29,7 @@
       <div class="container">
         <nav class="header__navigation navigation">
           <a href="index.html" class="navigation__logo-link" data-navigation-logo>
-            <svg class="navigation__logo" width="70" height="38" viewBox="0 0 70 38" aria-label="Логотип сайта">
+            <svg class="navigation__logo" width="70" height="38" viewBox="0 0 70 38" aria-label="Логотип сайта.">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
@@ -70,7 +70,7 @@
               <source media="(max-width: 767px)" type="image/webp" srcset="img/content/pingvini-mobile@1x.webp 1x, img/content/pingvini-mobile@2x.webp 2x">
               <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/pingvini-tablet@1x.webp 1x, img/content/pingvini-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/pingvini-desktop@1x.webp 1x, img/content/pingvini-desktop@2x.webp 2x">
-              <img src="img/content/pingvini-desktop@1x.jpg" srcset="img/content/pingvini-desktop@2x.jpg 2x" alt="Пингвины">
+              <img src="img/content/pingvini-desktop@1x.jpg" width="560" height="301" srcset="img/content/pingvini-desktop@2x.jpg 2x" alt="Пингвины">
             </picture>
           </div>
         </div>
@@ -299,7 +299,7 @@
                   <label class="visually-hidden" for="phone">Ваш телефон</label>
                   <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
                 </div>
-                <div class="form__field-wrap" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="*введите правильный формат e-mail" data-validate-type="text" data-required>
+                <div class="form__field-wrap" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="*введите правильный формат e-mail" data-required>
                   <label class="visually-hidden" for="email">Ваш e-mail</label>
                   <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
@@ -314,15 +314,15 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrap">
             <h2 class="visually-hidden">Контакты</h2>
             <div class="contacts__map map" id="map"></div>
             <div class="contacts__content">
-              <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
-              <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
-              <tel>8-800-200-00-00</tel>
+              <h3>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</h3>
+              <address class="contacts__address">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+              <p class="contacts__phone">8-800-200-00-00</p>
             </div>
           </div>
         </div>
@@ -335,7 +335,7 @@
         <div class="footer__wrap">
           <nav class="footer__navigation navigation navigation--footer">
             <a href="index.html" class="navigation__logo-link">
-              <svg class="navigation__logo" width="70" height="38" viewBox="0 0 70 38" aria-label="Логотип сайта">
+              <svg class="navigation__logo" width="70" height="38" viewBox="0 0 70 38" aria-label="Логотип сайта.">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </a>
@@ -357,6 +357,7 @@
           <ul class="footer__social social">
             <li class="social__item">
               <a href="#" class="social__link">
+                <span class="visually-hidden">Одноклассники</span>
                 <svg width="20" height="20" viewBox="0 0 12 20">
                   <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
@@ -364,6 +365,7 @@
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
+                <span class="visually-hidden">Яндекс Дзен</span>
                 <svg width="20" height="20" viewBox="0 0 20 20">
                   <use xlink:href="img/sprite.svg#dzen"></use>
                 </svg>
@@ -371,6 +373,7 @@
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
+                <span class="visually-hidden">Reddit</span>
                 <svg width="20" height="20" viewBox="0 0 20 20">
                   <use xlink:href="img/sprite.svg#reddit"></use>
                 </svg>

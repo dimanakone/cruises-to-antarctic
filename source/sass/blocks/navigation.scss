@@ -12,7 +12,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 143px;
+    margin-bottom: 134px;
     min-height: 22px;
 
     &.is-active {
@@ -37,13 +37,15 @@
   }
 
   @include vp-767 {
+    margin-top: -2px;
+
     &.is-active {
       position: absolute;
       left: 58px;
       z-index: 50;
     }
 
-    &.is-active .navigation__logo{
+    &.is-active .navigation__logo {
       fill: $color-default-black;
     }
   }
@@ -173,11 +175,11 @@
     margin-bottom: 0;
     flex-direction: column;
     align-items: start;
-    gap: 30px;
+    gap: 28px;
   }
 }
 
-.navigation--footer .navigation__logo-link{
+.navigation--footer .navigation__logo-link {
   margin-top: -15px;
   margin-right: 40px;
 
@@ -188,7 +190,7 @@
 
   @include vp-767 {
     margin-right: 0;
-  };
+  }
 }
 
 .navigation--footer .navigation__list {
@@ -202,8 +204,9 @@
   }
 
   @include vp-767 {
+    margin-top: 0;
     flex-direction: column;
-    gap: 23px;
+    gap: 18px;
   }
 }
 

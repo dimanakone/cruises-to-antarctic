@@ -12,7 +12,7 @@
   border-radius: 0;
   cursor: pointer;
   user-select: none;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 
   &:disabled {
     opacity: 0.5;

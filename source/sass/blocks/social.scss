@@ -13,6 +13,11 @@
     grid-template-columns: repeat(auto-fit, 16px);
     gap: 22px;
   }
+
+  @include vp-767 {
+    margin-left: -3px;
+    gap: 20px;
+  }
 }
 
 .social__item {
@@ -35,7 +40,7 @@
 
 .social svg {
   @include vp-1365 {
-    width:16px;
+    width: 16px;
     max-height: 16px;
   }
 }
