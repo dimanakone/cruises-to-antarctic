@@ -5,9 +5,11 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20px);
-  gap: 17px;
+  gap: 26px;
+  margin-top: 5px;
 
   @include vp-1365 {
+    margin-top: 0;
     grid-template-columns: repeat(auto-fit, 16px);
     gap: 22px;
   }

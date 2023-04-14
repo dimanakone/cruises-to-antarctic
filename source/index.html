@@ -81,21 +81,21 @@
           <h2>Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <svg width="21" height="26" viewBox="0 0 21 26">
+              <svg width="27" height="32" viewBox="0 0 27 32">
                 <use xlink:href="img/sprite.svg#ship"></use>
               </svg>
               <h3>Небольшой круизный лайнер</h3>
               <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
             </li>
             <li class="advantages__item">
-              <svg width="27" height="26" viewBox="0 0 27 26">
+              <svg width="38" height="32" viewBox="0 0 38 32">
                 <use xlink:href="img/sprite.svg#ticks"></use>
               </svg>
               <h3>Система все включено</h3>
               <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
             </li>
             <li class="advantages__item">
-              <svg width="36" height="26" viewBox="0 0 36 26">
+              <svg width="44" height="32" viewBox="0 0 44 32">
                 <use xlink:href="img/sprite.svg#launch"></use>
               </svg>
               <h3>Экскурсионные туры на Zodiac</h3>
@@ -299,7 +299,7 @@
                   <label class="visually-hidden" for="phone">Ваш телефон</label>
                   <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
                 </div>
-                <div class="form__field-wrap" data-message-base="Поле обязательно к заполнению" data-message-extra="*введите сообщение" data-validate-type="text" data-required>
+                <div class="form__field-wrap" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="*введите правильный формат e-mail" data-validate-type="text" data-required>
                   <label class="visually-hidden" for="email">Ваш e-mail</label>
                   <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
@@ -308,11 +308,26 @@
                   <label for="consent">Я согласен на обработку моих персональных данных</label>
                 </div>
               </div>
-              <button class="btn" type="submit">Оставить заявку</button>
+              <button class="form__btn btn" type="submit">Оставить заявку</button>
             </form>
           </div>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrap">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="contacts__map map" id="map"></div>
+            <div class="contacts__content">
+              <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+              <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+              <tel>8-800-200-00-00</tel>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">
@@ -366,35 +381,6 @@
       </div>
     </footer>
 
-  </div>
-
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
   </div>
 
   <script src="js/vendor.min.js"></script>

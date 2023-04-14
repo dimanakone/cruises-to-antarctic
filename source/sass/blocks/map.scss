@@ -1,0 +1,19 @@
+.map {
+  height: 306px;
+
+  @include vp-1365 {
+    width: 99%;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    height: 316px;
+  }
+}
+
+.pin {
+  position: relative;
+  box-sizing: border-box;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
