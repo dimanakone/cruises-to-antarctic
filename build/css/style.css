@@ -889,7 +889,7 @@ button,
 }
 
 .navigation__list {
-  max-width: 1100px;
+  max-width: 1060px;
   margin: 0;
   margin-top: -2px;
   padding: 0;
@@ -1697,7 +1697,7 @@ button,
 
   .navigation__logo-link.is-active {
     position: absolute;
-    left: 58px;
+    left: 52px;
     z-index: 50;
   }
 
@@ -1741,7 +1741,7 @@ button,
     display: grid;
     -ms-grid-columns: 240px;
     grid-template-columns: 240px;
-    gap: 10px;
+    gap: 11px;
   }
 
   .navigation__toggler {
@@ -1759,6 +1759,7 @@ button,
   }
 
   .navigation__toggler.is-active {
+    right: 9px;
     background: transparent url("../img/svg/cross.svg") no-repeat center;
   }
 
