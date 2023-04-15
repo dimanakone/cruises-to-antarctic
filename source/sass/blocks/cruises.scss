@@ -57,6 +57,25 @@
   color: $color-default-white;
   background-color: $color-default-black;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $gradient-cards;
+    z-index: 2;
+  }
+
+  &:focus,
+  &:focus-within,
+  &:hover {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .cruises__content {
