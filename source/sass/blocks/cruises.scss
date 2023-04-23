@@ -1,7 +1,7 @@
 .cruises {
   padding: 85px 0 120px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 90px 0 100px;
   }
 
@@ -20,7 +20,7 @@
   line-height: 42px;
   color: $color-default-black;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -38,16 +38,16 @@
   list-style-type: none;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 30px;
   justify-content: center;
 
-  @include vp-1365 {
-    grid-template-columns: repeat(auto-fill, 309px);
+  @include vp-1023 {
+    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   }
 }
 
@@ -88,7 +88,7 @@
   background-color: $color-default-black;
   overflow-y: auto;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 35px;
   }
 
@@ -124,7 +124,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     top: 331px;
     left: 35px;
   }
@@ -138,12 +138,12 @@
 .cruises__content h3 {
   position: static;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .cruises__item h4 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -151,14 +151,14 @@
 
 .cruises__item p {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
 
   &:last-of-type {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }
 

@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-height: 588px;
     padding: 90px 0;
     background-image: image-set(
@@ -44,7 +44,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
   }
 
@@ -58,7 +58,7 @@
   padding: 30px 30px 45px;
   background-color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 26px 15px 20px 20px;
   }
 }
@@ -66,7 +66,7 @@
 .advantages svg {
   margin-bottom: 13px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     height: 26px;
     margin-left: -4px;
     margin-bottom: 12px;
@@ -84,7 +84,7 @@
   line-height: 42px;
   color: $color-default-black;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -105,7 +105,7 @@
   line-height: 27px;
   color: $color-default-black;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 25px;
   }

@@ -1,7 +1,7 @@
 .contacts {
   padding: 119px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 100px 0;
   }
 
@@ -12,11 +12,11 @@
 
 .contacts__wrap {
   display: grid;
-  grid-template-columns: 1fr 500px;
+  grid-template-columns: 48.3% 1fr;
   gap: 100px;
   align-items: center;
 
-  @include vp-1365 {
+  @include vp-1023 {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
@@ -46,7 +46,7 @@
   font-size: 18px;
   line-height: 27px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 27px;
   }
 }
@@ -70,7 +70,7 @@
 .contacts__content address {
   margin-bottom: 23px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 21px;
   }
 }
