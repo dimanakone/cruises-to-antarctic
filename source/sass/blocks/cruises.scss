@@ -38,16 +38,16 @@
   list-style-type: none;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, 260px);
   gap: 30px;
   justify-content: center;
 
   @include vp-1023 {
-    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+    grid-template-columns: repeat(auto-fill, 309px);
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 }
 

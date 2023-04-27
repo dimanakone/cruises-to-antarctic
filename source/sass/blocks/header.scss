@@ -1,6 +1,7 @@
 .header {
   position: relative;
   padding-top: 35px;
+  padding-bottom: 25px;
   min-height: 650px;
   background-color: $color-default-black;
   background-image: image-set(
@@ -28,6 +29,7 @@
   @include vp-767 {
     min-height: 500px;
     padding-top: 20px;
+    padding-bottom: 20px;
     background-image: image-set(
       url("../img/background/bg-header-mobile@1x.webp") 1x,
       url("../img/background/bg-header-mobile@2x.webp") 2x,

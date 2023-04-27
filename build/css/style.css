@@ -784,6 +784,7 @@ button,
 .header {
   position: relative;
   padding-top: 35px;
+  padding-bottom: 25px;
   min-height: 650px;
   background-color: #011c40;
   background-image: -webkit-image-set(url("../img/background/bg-header-desktop@1x.webp") 1x, url("../img/background/bg-header-desktop@2x.webp") 2x, url("../img/background/bg-header-desktop@1x.jpg") 1x, url("../img/background/bg-header-desktop@2x.jpg") 2x);
@@ -829,9 +830,6 @@ button,
   -ms-grid-columns: 1fr 560px;
   grid-template-columns: 1fr 560px;
   gap: 88px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .about__desc-wrap {
@@ -842,6 +840,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 56px;
 }
 
 .about h2 {
@@ -1043,7 +1042,7 @@ button,
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, 260px);
   gap: 30px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1188,9 +1187,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1212,6 +1208,9 @@ button,
 
 .booking__form {
   max-width: 403px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .booking h2 {
@@ -1255,6 +1254,7 @@ button,
 
 .contacts__content address,
 .contacts__content a {
+  display: block;
   position: relative;
   padding-left: 28px;
   margin-top: 0;
@@ -1265,12 +1265,13 @@ button,
   text-decoration: none;
 }
 
-.contacts__content p {
-  margin-bottom: 0;
+.contacts__content address:not(:last-child),
+.contacts__content a:not(:last-child) {
+  margin-bottom: 23px;
 }
 
-.contacts__content address {
-  margin-bottom: 23px;
+.contacts__content p {
+  margin-bottom: 0;
 }
 
 .contacts__address::before {
@@ -1406,6 +1407,13 @@ button,
   }
 */
 
+@media (max-width: 1200px) {
+  .about__content-wrap {
+    -ms-grid-columns: 1fr 380px;
+    grid-template-columns: 1fr 380px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
@@ -1447,6 +1455,10 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
+  }
+
+  .about__desc-wrap {
+    padding-top: 0;
   }
 
   .about h2 {
@@ -1541,7 +1553,7 @@ button,
   }
 
   .cruises__list {
-    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+    grid-template-columns: repeat(auto-fill, 309px);
   }
 
   .cruises__content {
@@ -1561,9 +1573,9 @@ button,
   }
 
   .booking__form-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1607,7 +1619,8 @@ button,
     margin-bottom: 27px;
   }
 
-  .contacts__content address {
+  .contacts__content address:not(:last-child),
+  .contacts__content a:not(:last-child) {
     margin-bottom: 21px;
   }
 
@@ -1665,6 +1678,7 @@ button,
   .header {
     min-height: 500px;
     padding-top: 20px;
+    padding-bottom: 20px;
     background-image: -webkit-image-set(url("../img/background/bg-header-mobile@1x.webp") 1x, url("../img/background/bg-header-mobile@2x.webp") 2x, url("../img/background/bg-header-mobile@1x.jpg") 1x, url("../img/background/bg-header-mobile@2x.jpg") 2x);
     background-image: image-set(url("../img/background/bg-header-mobile@1x.webp") 1x, url("../img/background/bg-header-mobile@2x.webp") 2x, url("../img/background/bg-header-mobile@1x.jpg") 1x, url("../img/background/bg-header-mobile@2x.jpg") 2x);
   }
@@ -1865,7 +1879,7 @@ button,
   }
 
   .cruises__list {
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 
   .cruises__item h3 {

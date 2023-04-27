@@ -53,6 +53,7 @@
 
 .contacts__content address,
 .contacts__content a {
+  display: block;
   position: relative;
   padding-left: 28px;
   margin-top: 0;
@@ -63,16 +64,17 @@
   text-decoration: none;
 }
 
-.contacts__content p {
-  margin-bottom: 0;
-}
-
-.contacts__content address {
+.contacts__content address:not(:last-child),
+.contacts__content a:not(:last-child) {
   margin-bottom: 23px;
 
   @include vp-1023 {
     margin-bottom: 21px;
   }
+}
+
+.contacts__content p {
+  margin-bottom: 0;
 }
 
 .contacts__address {

@@ -16,7 +16,10 @@
   display: grid;
   grid-template-columns: 1fr 560px;
   gap: 88px;
-  align-items: center;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 380px;
+  }
 
   @include vp-1023 {
     grid-template-columns: 1fr 324px;
@@ -33,6 +36,11 @@
 .about__desc-wrap {
   display: flex;
   flex-direction: column;
+  padding-top: 56px;
+
+  @include vp-1023 {
+    padding-top: 0;
+  }
 }
 
 .about h2 {
